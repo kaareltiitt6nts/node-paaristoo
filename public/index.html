@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="scripts/main.js"></script>
+    <!--<script src="scripts/main.js"></script>-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./scripts/main.js" type="module"></script>
 </head>
 <body>
     <div id="main">
-        <div id="blogSearch">
-            <input type="text" id="blogIdSearchField" placeholder="Sisesta postituse ID">
-            <input type="button" id="blogIdSearchButton" value="Otsi!">
+        <div id="postControls">
+            <div id="postFind">
+                <input type="text" name="" id="postIdInput" placeholder="Sisesta postituse ID">
+                <input type="button" name="" id="postFindButton" value="Otsi">
+            </div>
+            <div id="postCreate">
+                <input type="text" name="" id="postNameInput" placeholder="Postituse nimi">
+                <input type="text" name="" id="postCreatorInput" placeholder="Postituse looja">
+                <textarea name="" id="postContentInput" maxlength="256"></textarea>
+                <input type="button" name="" id="postCreateButton" value="Salvesta">
+                <p id="postCreateNotification">
+                </p>
+            </div>
         </div>
 
-        <div id="posts"></div>
+        <div id="postContainer" class="hidden">
+            <div id="post">
+                <div id="postInfo">
+                    <h1 id="postName">Note</h1>
+                    <h2 id="postCreator">Looja</h2>
+                </div>
+    
+                <div id="postContent">
+                    <p class="caveat-700">adsaddass</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
