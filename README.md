@@ -1,2 +1,3 @@
-# Node.JS märkmikurakendus
-Lihtne rakendus märkmikute lisamiseks ja kuvamiseks
+# NodeJS märkmikurakendus
+Lihtne rakendus post-it märgete lisamiseks ja kuvamiseks läbi ID.
+Loodud NodeJS ja Express raamistikuga.
